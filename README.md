@@ -2,5 +2,5 @@
 #### progress:
 
 [x] part one
-[ ] part two
-
+[x] part two
+[ ] part three
