@@ -3,4 +3,4 @@
 
 [x] part one
 [x] part two
-[ ] part three
+[x] part three
