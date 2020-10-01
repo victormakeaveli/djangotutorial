@@ -6,10 +6,7 @@
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-            {% for choice in question.choice_set.all %}
-                <li>{{ choice.choice_text }} ,`-´, {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-            {% endfor %} 
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li> 
     {% endfor %}
     </ul>
 {% else %}
