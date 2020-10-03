@@ -1,15 +1,19 @@
 <!DOCTYPE Html>
 <html lang="en">
 
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
 <head>
 <meta charset="UTF-8">
 <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
 <title>{% block title %}{% endblock %}</title>
 </head>
 
 <header>
         <h2> Welcome to my polls site </h2>
-        <a href="{% url 'polls:index' %}"><h3>index</h3></a>
+        <a href="{% url 'polls:index' %}"><h3>"home"</h3></a>
 </header>
 
 <body>
