@@ -6,4 +6,4 @@
 - [x] part three
 - [x] part four
 - [ ] part five
-- [ ] part six
+- [x] part six
