@@ -13,12 +13,12 @@
 
 <header>
         <h2> Welcome to my polls site </h2>
-        <a href="{% url 'polls:index' %}"><h3>"home"</h3></a>
+        <h3><a href="{% url 'polls:index' %}">home</a> | <a href="{% url 'admin:index' %}">adm</a></h3>
 </header>
 
 <body>
 
 {% block content %}{% endblock %}
-
+ Victor Hugo
 </body>
 </html>
