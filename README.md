@@ -7,3 +7,4 @@
 - [x] part four
 - [ ] part five
 - [x] part six
+- [x] part seven
