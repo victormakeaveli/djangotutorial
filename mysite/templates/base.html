@@ -1,22 +1,27 @@
 <!DOCTYPE Html>
-<html lang="en">
 
-{% load static %}
-<head>
-        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<html lang="en">
 <meta charset="UTF-8">
 <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 
-<title>{% block title %}{% endblock %}</title>
+{% load static %}
+
+
+<head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 
+
 <header>
-        <h2> Welcome to my polls site </h2>
-        <h3><a href="{% url 'polls:index' %}">home</a> | <a href="{% url 'admin:index' %}">adm</a></h3>
+        <h1> Welcome to my polls site </h2>
+        <h2><a href="{% url 'polls:index' %}">HOME</a>
 </header>
+
 
 <body>
 
 {% block content %}{% endblock %}
+
 </body>
 </html>
