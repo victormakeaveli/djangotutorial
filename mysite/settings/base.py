@@ -1,7 +1,7 @@
 from pathlib import Path
 import os
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -88,4 +88,4 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_URL = '/polls/static/'
+STATIC_URL = '/static/'
