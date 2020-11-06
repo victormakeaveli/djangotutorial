@@ -6,7 +6,7 @@ from django.utils import timezone
 from django.urls import reverse
 from django.test import Client
 
-from .models import Question, Choice
+from .models import Question
 
 
 class QuestionModelTests(TestCase):
